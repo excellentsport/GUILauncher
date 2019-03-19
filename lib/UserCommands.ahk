@@ -126,31 +126,31 @@ else if Command = Screen Clip with OCR ; Open Screenclip with OCR
 else if Command = AutoGUI ; Open AutoGUI
 {
     gui_destroy()
-    run, "%A_ScriptDir%\..\..\Apps\AutoGUI\AutoGUI.ahk"
+    run, "%A_ScriptDir%\..\Apps\AutoGUI\AutoGUI.ahk"
 }
 
 else if Command = Belvedere For Desktop ; Open Belvedere for work desktop
 {
     gui_destroy()
-    run, "%A_ScriptDir%\..\belvedere-desktop\belvedere.ahk"
+    run, "%A_ScriptDir%\..\Apps\belvedere-desktop\belvedere.ahk"
 }
 
 else if Command = Belvedere For Laptop ; Open Belvedere for laptop
 {
     gui_destroy()
-    run, "%A_ScriptDir%\..\belvedere-laptop\belvedere.ahk"
+    run, "%A_ScriptDir%\..\Apps\belvedere-laptop\belvedere.ahk"
 }
 
 else if Command = Clipjump ; Open Clipjump
 {
     gui_destroy()
-    run, "%A_ScriptDir%\..\Clipjump\Clipjump.exe"
+    run, "%A_ScriptDir%\..\Apps\Clipjump\Clipjump.exe"
 }
 
 else if Command = Lintalist ; Open Lintalist
 {
     gui_destroy()
-    run, "%A_ScriptDir%\..\lintalist\lintalist.ahk"
+    run, "%A_ScriptDir%\..\Apps\lintalist\lintalist.ahk"
 }
 
 
@@ -236,6 +236,11 @@ else if Command = Paperpile ; Paperpile App
     Run https://paperpile.com/app
 }
 
+else if Command = Compose Email ; Open Gmail Compose Window without inbox
+{
+    gui_destroy()
+    Run https://mail.google.com/mail/?view=cm&fs=1&tf=1
+}
 
 ;-------------------------------------------------------------------------------
 ;;; Launch Windows Utilities ;;;
